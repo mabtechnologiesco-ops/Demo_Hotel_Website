@@ -1,0 +1,10 @@
+# Render Blueprint – Suilo Hotel static website
+# https://render.com/docs/blueprint-spec
+#
+# Static site: no build step, files are published straight from the repo root.
+services:
+  - type: web
+    runtime: static
+    name: hotel-website
+    staticPublishPath: .
+    pullRequestPreviewsEnabled: true
